@@ -84,10 +84,10 @@ global.app = (function() {
     var runtime = require('./lib/jsdoc/util/runtime');
     var cli = require('./cli');
     var iconv = require('iconv-lite');
-    
+
     // Add more encodings
     iconv.extendNodeEncodings();
-    
+
     function cb(errorCode) {
         cli.logFinish();
         cli.exit(errorCode || 0);
